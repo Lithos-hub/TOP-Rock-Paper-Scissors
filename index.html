@@ -9,28 +9,29 @@
 <body>
  <script>
   // rock paper scissors Game
-  let playerSelection;
-  let computerSelection;
+  
+  
   // computer randomly selects one of three option Math.floor(Math.random()* 3)
 
-  function getComputerSelection (){
-      const computerNumber = Math.floor(Math.random() * 3);
-      console.log(computerNumber);
-      if (computerNumber === 0){
-       computerSelection = "Rock";
-      } else if
-       (computerNumber === 1) {
-        computerSelection = "Paper";
-
-       } else {
-        computerSelection = "Scissors";
-       }
+   function getComputerChoice (){
+      const computerNumber = Math.round(Math.random() * 2);
       
-   console.log(getComputerSelection);
-   return computerSelection;
+      switch (computerNumber) {
+       case 0:
+        return "rock";
+        break;
+       case 1:
+        return "paper";
+        break;
+       case 2: 
+       return "scissors";
+       break;
+      }
+      
+}
+const computerSelection = getComputerChoice ();
 
 
-  }
 
   // ask for player selection (case-insensitve)
   // play a round comparing computer vs player slection and return who is the winner.
