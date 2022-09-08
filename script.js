@@ -69,29 +69,6 @@ function game() {
 
     //Play round
     playRound(playerSelection, computerSelection);
-
-    // function playRound(playerSelection, computerSelection) {
-    //   if (playerSelection === computerSelection) {
-    //     return alert("Tie");
-    //   } else if (playerSelection == "rock" && computerSelection == "scissors") {
-    //     playerScore++;
-    //     return alert("You Win! Rock beats Scissor");
-    //   } else if (playerSelection == "paper" && computerSelection == "rock") {
-    //     playerScore++;
-    //     return alert("You Win! Paper beats Rock");
-    //   } else if (
-    //     playerSelection == "scissors" &&
-    //     computerSelection == "paper"
-    //   ) {
-    //     playerScore++;
-    //     return alert("You Win! Scissors beats Paper");
-    //   } else {
-    //     computerScore++;
-    //     return alert(
-    //       `You Lose! ${computerSelection} beats ${playerSelection} `
-    //     );
-    //   }
-    // }
   }
   // determine who won the five round set
   if (playerScore > computerScore) {
@@ -104,6 +81,7 @@ function game() {
 
   // console.log("End game! " + endgameMessage); // => Do the same, but it is a "old school" way
   console.log(`End game! ${endgameMessage}`); // => Do the same, but it is a more modern way
+  alert(`End game! ${endgameMessage}`);
 }
 
 game();
