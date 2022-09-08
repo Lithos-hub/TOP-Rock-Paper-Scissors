@@ -61,7 +61,7 @@ function playRound(playerSelection, computerSelection) {
 function game() {
   let endgameMessage = "";
   //loop for 5 games, track round and wins
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i < 5; i++) {
     const playerSelection = getPlayerChoice();
     const computerSelection = getComputerChoice();
     console.log("Player win totals: " + playerScore);
